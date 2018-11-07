@@ -19,6 +19,7 @@ body {
 
 h1 {
     text-align: center;
+	text-shadow: hsl(060deg, 100%, 0%) 0.3rem 0.5rem;
 }
 
 label{
@@ -41,7 +42,7 @@ input{
 
 button {
     width: 100px;
-    margin: 2em auto;
+    margin: 2rem auto;
     display: block;
 	background-color: hsl(060deg, 95%, 80%);
 	font-size: 0.9rem;
@@ -59,9 +60,24 @@ div {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-	border: 0.2rem ridge hsl(060deg, 95%, 80%);
+	border: 1rem ridge hsl(060deg, 95%, 80%);
 }
 
+ul li {
+	
+	font-size: 2rem;
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	margin: 2rem;
+	min-width: 3rem;
+	max-width: inherit;
+	border: 0.2rem ridge hsl(060deg, 95%, 80%);
+}
 
 main {
     flex-grow: 1;
@@ -79,4 +95,56 @@ header,
 main,
 footer {
     flex-shrink: 0;
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+	
+	body {
+    	line-height: 1.7;
+    	background-color: hsl(210deg, 70%, 20%);
+    	color: hsl(060deg, 95%, 80%);
+		font-size: 1.4rem;
+	}
+
+	ul{
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+		margin: 2rem;
+		border: 0.4rem ridge hsl(060deg, 95%, 80%);
+	}
+	
+	ul li {
+		font-size: 3rem;
+		border: 0.3rem ridge hsl(060deg, 95%, 80%);
+	}
+}
+
+@media (min-width: 1000px) {
+	
+	body {
+    	line-height: 1.9;
+    	background-color: hsl(210deg, 60%, 30%);
+    	color: hsl(060deg, 95%, 80%);
+		font-size: 1.4rem;
+	}
+	
+	ul{
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+		margin: 2rem;
+		border: 0.6rem ridge hsl(060deg, 95%, 80%);
+	}
+	
+	ul li {
+		font-size: 4rem;
+		border: 0.4rem ridge hsl(060deg, 95%, 80%);
+	}
 }
