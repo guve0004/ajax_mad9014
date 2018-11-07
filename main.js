@@ -37,11 +37,9 @@ function getData() {
 	let range = document.getElementById("max").value;
 	if(digs <= 0 || digs > 6 || digs == null){
 		alert("Please enter the number of digits between 1-6");
-		digs.focus();
 		return;
 	} else if(range <= 0 || range > 49 || range == null){
 		alert("Please enter the maximum range between 1-49");
-		range.focus();
 		return;
 	}
 
@@ -70,9 +68,9 @@ function getData() {
         	console.log(data); 
 			let ul = document.querySelector(".num_list");
             ul.innerHTML = "";
-            for (i = 0; i < data.numbers.length; i++) {
+            for (item = 0; item < data.numbers.length; item++) {
                 let li = document.createElement("li");
-                li.textContent = data.numbers[i];
+                li.textContent = data.numbers[item];
                 ul.appendChild(li);
             }
 })
