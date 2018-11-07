@@ -1,0 +1,82 @@
+/*************************
+File name: main.css
+Emin Guven
+November 6, 2018
+*************************/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:400,700";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: hsl(210deg, 80%, 10%);
+    color: hsl(060deg, 95%, 80%);
+	font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+label{
+    margin-right: 0.3rem;
+}
+
+input{
+    margin-left: 0.5rem;
+	background-color: hsl(060deg, 95%, 80%);
+	font-size: 0.9rem;
+	color: hsl(210deg, 95%, 0%);
+	text-align: center;
+}
+
+.formBox {
+    display: flex;
+    justify-content: center;
+}
+
+
+button {
+    width: 100px;
+    margin: 2em auto;
+    display: block;
+	background-color: hsl(060deg, 95%, 80%);
+	font-size: 0.9rem;
+	color: hsl(210deg, 95%, 0%);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+	font-size: 0.8rem;
+}
+
+div {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+	border: 0.2rem ridge hsl(060deg, 95%, 80%);
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block; 
+}
+
+header,
+main,
+footer {
+    flex-shrink: 0;
+}
