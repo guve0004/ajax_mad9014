@@ -68,7 +68,7 @@ function getData() {
         	console.log(data); 
 			let ul = document.querySelector(".num_list");
             ul.innerHTML = "";
-            for (item = 0; item < data.numbers.length; item++) {
+            for (let item = 0; item < data.numbers.length; item++) {
                 let li = document.createElement("li");
                 li.textContent = data.numbers[item];
                 ul.appendChild(li);
